@@ -1,0 +1,31 @@
+
+
+C:/altera/13.1/lpm_latch0.tdf
+
+Apr 05 10PM:23:26>: Megafunction LPM_LATCH is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/altera/13.1/lpm_latch0.tdf
+
+Apr 05 10PM:45:36>: Megafunction LPM_LATCH is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/altera/13.1/lpm_latch0.tdf
+
+Apr 05 10PM:45:40>: Megafunction LPM_LATCH is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/altera/13.1/lpm_latch0.tdf
+
+Apr 05 10PM:45:42>: Megafunction LPM_LATCH is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/altera/13.1/lpm_latch0.tdf
+
+Apr 05 10PM:45:43>: Megafunction LPM_LATCH is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/altera/13.1/lpm_latch0.tdf
+
+Apr 06 04PM:33:37>: Megafunction LPM_LATCH is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
