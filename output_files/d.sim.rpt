@@ -1,0 +1,385 @@
+Simulator report for d
+Sat Apr 05 22:43:20 2025
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 us      ;
+; Simulation Netlist Size     ; 122 nodes    ;
+; Simulation Coverage         ;       7.89 % ;
+; Total Number of Transitions ; 33           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C5F256C6  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       7.89 % ;
+; Total nodes checked                                 ; 122          ;
+; Total output ports checked                          ; 114          ;
+; Total output ports with complete 1/0-value coverage ; 9            ;
+; Total output ports with no 1/0-value coverage       ; 91           ;
+; Total output ports with no 1-value coverage         ; 101          ;
+; Total output ports with no 0-value coverage         ; 95           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; Node Name                                          ; Output Port Name                                   ; Output Port Type ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+; |ula|somador_completo:inst2|somador:somador2|ou2~0 ; |ula|somador_completo:inst2|somador:somador2|ou2~0 ; combout          ;
+; |ula|somador_completo:inst2|somador:somador3|ou2~0 ; |ula|somador_completo:inst2|somador:somador3|ou2~0 ; combout          ;
+; |ula|subtrador:inst|somador:somador2|ou2~0         ; |ula|subtrador:inst|somador:somador2|ou2~0         ; combout          ;
+; |ula|B[0]~input                                    ; |ula|B[0]~input                                    ; o                ;
+; |ula|B[0]                                          ; |ula|B[0]                                          ; padout           ;
+; |ula|A[0]~input                                    ; |ula|A[0]~input                                    ; o                ;
+; |ula|A[0]                                          ; |ula|A[0]                                          ; padout           ;
+; |ula|B[1]~input                                    ; |ula|B[1]~input                                    ; o                ;
+; |ula|B[1]                                          ; |ula|B[1]                                          ; padout           ;
++----------------------------------------------------+----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                       ; Output Port Type ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; |ula|somador_completo:inst2|somador:somador4|ou2~0                                     ; |ula|somador_completo:inst2|somador:somador4|ou2~0                                     ; combout          ;
+; |ula|somador_completo:inst2|somador:somador5|ou2~0                                     ; |ula|somador_completo:inst2|somador:somador5|ou2~0                                     ; combout          ;
+; |ula|somador_completo:inst2|somador:somador6|ou2~0                                     ; |ula|somador_completo:inst2|somador:somador6|ou2~0                                     ; combout          ;
+; |ula|subtrador:inst|somador:somador3|ou2~0                                             ; |ula|subtrador:inst|somador:somador3|ou2~0                                             ; combout          ;
+; |ula|subtrador:inst|somador:somador4|ou2~0                                             ; |ula|subtrador:inst|somador:somador4|ou2~0                                             ; combout          ;
+; |ula|subtrador:inst|somador:somador5|ou2~0                                             ; |ula|subtrador:inst|somador:somador5|ou2~0                                             ; combout          ;
+; |ula|subtrador:inst|somador:somador6|ou2~0                                             ; |ula|subtrador:inst|somador:somador6|ou2~0                                             ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~0  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~0  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~1  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~1  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~2  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~2  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~3  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~3  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[6]~4  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[6]~4  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[6]~5  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[6]~5  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[5]~6  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[5]~6  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[5]~7  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[5]~7  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[4]~8  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[4]~8  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[4]~9  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[4]~9  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[3]~10 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[3]~10 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[3]~11 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[3]~11 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[2]~12 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[2]~12 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[2]~13 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[2]~13 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[1]~14 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[1]~14 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[1]~15 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[1]~15 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[0]~16 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[0]~16 ; combout          ;
+; |ula|f[7]~output                                                                       ; |ula|f[7]~output                                                                       ; o                ;
+; |ula|f[7]                                                                              ; |ula|f[7]                                                                              ; padout           ;
+; |ula|f[6]~output                                                                       ; |ula|f[6]~output                                                                       ; o                ;
+; |ula|f[6]                                                                              ; |ula|f[6]                                                                              ; padout           ;
+; |ula|f[5]~output                                                                       ; |ula|f[5]~output                                                                       ; o                ;
+; |ula|f[5]                                                                              ; |ula|f[5]                                                                              ; padout           ;
+; |ula|f[4]~output                                                                       ; |ula|f[4]~output                                                                       ; o                ;
+; |ula|f[4]                                                                              ; |ula|f[4]                                                                              ; padout           ;
+; |ula|f[3]~output                                                                       ; |ula|f[3]~output                                                                       ; o                ;
+; |ula|f[3]                                                                              ; |ula|f[3]                                                                              ; padout           ;
+; |ula|f[2]~output                                                                       ; |ula|f[2]~output                                                                       ; o                ;
+; |ula|f[2]                                                                              ; |ula|f[2]                                                                              ; padout           ;
+; |ula|f[1]~output                                                                       ; |ula|f[1]~output                                                                       ; o                ;
+; |ula|f[1]                                                                              ; |ula|f[1]                                                                              ; padout           ;
+; |ula|f[0]~output                                                                       ; |ula|f[0]~output                                                                       ; o                ;
+; |ula|f[0]                                                                              ; |ula|f[0]                                                                              ; padout           ;
+; |ula|R[7]~output                                                                       ; |ula|R[7]~output                                                                       ; o                ;
+; |ula|R[7]                                                                              ; |ula|R[7]                                                                              ; padout           ;
+; |ula|R[6]~output                                                                       ; |ula|R[6]~output                                                                       ; o                ;
+; |ula|R[6]                                                                              ; |ula|R[6]                                                                              ; padout           ;
+; |ula|R[5]~output                                                                       ; |ula|R[5]~output                                                                       ; o                ;
+; |ula|R[5]                                                                              ; |ula|R[5]                                                                              ; padout           ;
+; |ula|R[4]~output                                                                       ; |ula|R[4]~output                                                                       ; o                ;
+; |ula|R[4]                                                                              ; |ula|R[4]                                                                              ; padout           ;
+; |ula|R[3]~output                                                                       ; |ula|R[3]~output                                                                       ; o                ;
+; |ula|R[3]                                                                              ; |ula|R[3]                                                                              ; padout           ;
+; |ula|R[2]~output                                                                       ; |ula|R[2]~output                                                                       ; o                ;
+; |ula|R[2]                                                                              ; |ula|R[2]                                                                              ; padout           ;
+; |ula|R[1]~output                                                                       ; |ula|R[1]~output                                                                       ; o                ;
+; |ula|R[1]                                                                              ; |ula|R[1]                                                                              ; padout           ;
+; |ula|R[0]~output                                                                       ; |ula|R[0]~output                                                                       ; o                ;
+; |ula|R[0]                                                                              ; |ula|R[0]                                                                              ; padout           ;
+; |ula|A[7]~input                                                                        ; |ula|A[7]~input                                                                        ; o                ;
+; |ula|A[7]                                                                              ; |ula|A[7]                                                                              ; padout           ;
+; |ula|S[0]~input                                                                        ; |ula|S[0]~input                                                                        ; o                ;
+; |ula|S[0]                                                                              ; |ula|S[0]                                                                              ; padout           ;
+; |ula|S[1]~input                                                                        ; |ula|S[1]~input                                                                        ; o                ;
+; |ula|S[1]                                                                              ; |ula|S[1]                                                                              ; padout           ;
+; |ula|B[7]~input                                                                        ; |ula|B[7]~input                                                                        ; o                ;
+; |ula|B[7]                                                                              ; |ula|B[7]                                                                              ; padout           ;
+; |ula|A[6]~input                                                                        ; |ula|A[6]~input                                                                        ; o                ;
+; |ula|A[6]                                                                              ; |ula|A[6]                                                                              ; padout           ;
+; |ula|B[6]~input                                                                        ; |ula|B[6]~input                                                                        ; o                ;
+; |ula|B[6]                                                                              ; |ula|B[6]                                                                              ; padout           ;
+; |ula|A[5]~input                                                                        ; |ula|A[5]~input                                                                        ; o                ;
+; |ula|A[5]                                                                              ; |ula|A[5]                                                                              ; padout           ;
+; |ula|B[5]~input                                                                        ; |ula|B[5]~input                                                                        ; o                ;
+; |ula|B[5]                                                                              ; |ula|B[5]                                                                              ; padout           ;
+; |ula|A[4]~input                                                                        ; |ula|A[4]~input                                                                        ; o                ;
+; |ula|A[4]                                                                              ; |ula|A[4]                                                                              ; padout           ;
+; |ula|B[4]~input                                                                        ; |ula|B[4]~input                                                                        ; o                ;
+; |ula|B[4]                                                                              ; |ula|B[4]                                                                              ; padout           ;
+; |ula|A[3]~input                                                                        ; |ula|A[3]~input                                                                        ; o                ;
+; |ula|A[3]                                                                              ; |ula|A[3]                                                                              ; padout           ;
+; |ula|B[3]~input                                                                        ; |ula|B[3]~input                                                                        ; o                ;
+; |ula|B[3]                                                                              ; |ula|B[3]                                                                              ; padout           ;
+; |ula|A[2]~input                                                                        ; |ula|A[2]~input                                                                        ; o                ;
+; |ula|A[2]                                                                              ; |ula|A[2]                                                                              ; padout           ;
+; |ula|g[7]~input                                                                        ; |ula|g[7]~input                                                                        ; o                ;
+; |ula|g[7]                                                                              ; |ula|g[7]                                                                              ; padout           ;
+; |ula|pin_name~input                                                                    ; |ula|pin_name~input                                                                    ; o                ;
+; |ula|pin_name                                                                          ; |ula|pin_name                                                                          ; padout           ;
+; |ula|g[6]~input                                                                        ; |ula|g[6]~input                                                                        ; o                ;
+; |ula|g[6]                                                                              ; |ula|g[6]                                                                              ; padout           ;
+; |ula|g[5]~input                                                                        ; |ula|g[5]~input                                                                        ; o                ;
+; |ula|g[5]                                                                              ; |ula|g[5]                                                                              ; padout           ;
+; |ula|g[4]~input                                                                        ; |ula|g[4]~input                                                                        ; o                ;
+; |ula|g[4]                                                                              ; |ula|g[4]                                                                              ; padout           ;
+; |ula|g[3]~input                                                                        ; |ula|g[3]~input                                                                        ; o                ;
+; |ula|g[3]                                                                              ; |ula|g[3]                                                                              ; padout           ;
+; |ula|g[2]~input                                                                        ; |ula|g[2]~input                                                                        ; o                ;
+; |ula|g[2]                                                                              ; |ula|g[2]                                                                              ; padout           ;
+; |ula|g[1]~input                                                                        ; |ula|g[1]~input                                                                        ; o                ;
+; |ula|g[1]                                                                              ; |ula|g[1]                                                                              ; padout           ;
+; |ula|g[0]~input                                                                        ; |ula|g[0]~input                                                                        ; o                ;
+; |ula|g[0]                                                                              ; |ula|g[0]                                                                              ; padout           ;
+; |ula|pin_name~inputclkctrl                                                             ; |ula|pin_name~inputclkctrl                                                             ; outclk           ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                       ; Output Port Type ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; |ula|somador_completo:inst2|somador:somador4|ou2~0                                     ; |ula|somador_completo:inst2|somador:somador4|ou2~0                                     ; combout          ;
+; |ula|somador_completo:inst2|somador:somador5|ou2~0                                     ; |ula|somador_completo:inst2|somador:somador5|ou2~0                                     ; combout          ;
+; |ula|somador_completo:inst2|somador:somador6|ou2~0                                     ; |ula|somador_completo:inst2|somador:somador6|ou2~0                                     ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~3  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[7]~3  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[6]~4  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[6]~4  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[6]~5  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[6]~5  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[5]~6  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[5]~6  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[5]~7  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[5]~7  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[4]~8  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[4]~8  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[4]~9  ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[4]~9  ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[3]~10 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[3]~10 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[3]~11 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[3]~11 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[2]~12 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[2]~12 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[2]~13 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[2]~13 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[1]~14 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[1]~14 ; combout          ;
+; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[1]~15 ; |ula|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_j6e:auto_generated|result_node[1]~15 ; combout          ;
+; |ula|f[7]~output                                                                       ; |ula|f[7]~output                                                                       ; o                ;
+; |ula|f[7]                                                                              ; |ula|f[7]                                                                              ; padout           ;
+; |ula|f[6]~output                                                                       ; |ula|f[6]~output                                                                       ; o                ;
+; |ula|f[6]                                                                              ; |ula|f[6]                                                                              ; padout           ;
+; |ula|f[5]~output                                                                       ; |ula|f[5]~output                                                                       ; o                ;
+; |ula|f[5]                                                                              ; |ula|f[5]                                                                              ; padout           ;
+; |ula|f[4]~output                                                                       ; |ula|f[4]~output                                                                       ; o                ;
+; |ula|f[4]                                                                              ; |ula|f[4]                                                                              ; padout           ;
+; |ula|f[3]~output                                                                       ; |ula|f[3]~output                                                                       ; o                ;
+; |ula|f[3]                                                                              ; |ula|f[3]                                                                              ; padout           ;
+; |ula|f[2]~output                                                                       ; |ula|f[2]~output                                                                       ; o                ;
+; |ula|f[2]                                                                              ; |ula|f[2]                                                                              ; padout           ;
+; |ula|f[1]~output                                                                       ; |ula|f[1]~output                                                                       ; o                ;
+; |ula|f[1]                                                                              ; |ula|f[1]                                                                              ; padout           ;
+; |ula|f[0]~output                                                                       ; |ula|f[0]~output                                                                       ; o                ;
+; |ula|f[0]                                                                              ; |ula|f[0]                                                                              ; padout           ;
+; |ula|R[7]~output                                                                       ; |ula|R[7]~output                                                                       ; o                ;
+; |ula|R[7]                                                                              ; |ula|R[7]                                                                              ; padout           ;
+; |ula|R[6]~output                                                                       ; |ula|R[6]~output                                                                       ; o                ;
+; |ula|R[6]                                                                              ; |ula|R[6]                                                                              ; padout           ;
+; |ula|R[5]~output                                                                       ; |ula|R[5]~output                                                                       ; o                ;
+; |ula|R[5]                                                                              ; |ula|R[5]                                                                              ; padout           ;
+; |ula|R[4]~output                                                                       ; |ula|R[4]~output                                                                       ; o                ;
+; |ula|R[4]                                                                              ; |ula|R[4]                                                                              ; padout           ;
+; |ula|R[3]~output                                                                       ; |ula|R[3]~output                                                                       ; o                ;
+; |ula|R[3]                                                                              ; |ula|R[3]                                                                              ; padout           ;
+; |ula|R[2]~output                                                                       ; |ula|R[2]~output                                                                       ; o                ;
+; |ula|R[2]                                                                              ; |ula|R[2]                                                                              ; padout           ;
+; |ula|R[1]~output                                                                       ; |ula|R[1]~output                                                                       ; o                ;
+; |ula|R[1]                                                                              ; |ula|R[1]                                                                              ; padout           ;
+; |ula|A[7]~input                                                                        ; |ula|A[7]~input                                                                        ; o                ;
+; |ula|A[7]                                                                              ; |ula|A[7]                                                                              ; padout           ;
+; |ula|S[0]~input                                                                        ; |ula|S[0]~input                                                                        ; o                ;
+; |ula|S[0]                                                                              ; |ula|S[0]                                                                              ; padout           ;
+; |ula|S[1]~input                                                                        ; |ula|S[1]~input                                                                        ; o                ;
+; |ula|S[1]                                                                              ; |ula|S[1]                                                                              ; padout           ;
+; |ula|B[7]~input                                                                        ; |ula|B[7]~input                                                                        ; o                ;
+; |ula|B[7]                                                                              ; |ula|B[7]                                                                              ; padout           ;
+; |ula|A[6]~input                                                                        ; |ula|A[6]~input                                                                        ; o                ;
+; |ula|A[6]                                                                              ; |ula|A[6]                                                                              ; padout           ;
+; |ula|B[6]~input                                                                        ; |ula|B[6]~input                                                                        ; o                ;
+; |ula|B[6]                                                                              ; |ula|B[6]                                                                              ; padout           ;
+; |ula|A[5]~input                                                                        ; |ula|A[5]~input                                                                        ; o                ;
+; |ula|A[5]                                                                              ; |ula|A[5]                                                                              ; padout           ;
+; |ula|B[5]~input                                                                        ; |ula|B[5]~input                                                                        ; o                ;
+; |ula|B[5]                                                                              ; |ula|B[5]                                                                              ; padout           ;
+; |ula|A[4]~input                                                                        ; |ula|A[4]~input                                                                        ; o                ;
+; |ula|A[4]                                                                              ; |ula|A[4]                                                                              ; padout           ;
+; |ula|B[4]~input                                                                        ; |ula|B[4]~input                                                                        ; o                ;
+; |ula|B[4]                                                                              ; |ula|B[4]                                                                              ; padout           ;
+; |ula|A[3]~input                                                                        ; |ula|A[3]~input                                                                        ; o                ;
+; |ula|A[3]                                                                              ; |ula|A[3]                                                                              ; padout           ;
+; |ula|B[3]~input                                                                        ; |ula|B[3]~input                                                                        ; o                ;
+; |ula|B[3]                                                                              ; |ula|B[3]                                                                              ; padout           ;
+; |ula|A[2]~input                                                                        ; |ula|A[2]~input                                                                        ; o                ;
+; |ula|A[2]                                                                              ; |ula|A[2]                                                                              ; padout           ;
+; |ula|B[2]~input                                                                        ; |ula|B[2]~input                                                                        ; o                ;
+; |ula|B[2]                                                                              ; |ula|B[2]                                                                              ; padout           ;
+; |ula|A[1]~input                                                                        ; |ula|A[1]~input                                                                        ; o                ;
+; |ula|A[1]                                                                              ; |ula|A[1]                                                                              ; padout           ;
+; |ula|g[7]~input                                                                        ; |ula|g[7]~input                                                                        ; o                ;
+; |ula|g[7]                                                                              ; |ula|g[7]                                                                              ; padout           ;
+; |ula|pin_name~input                                                                    ; |ula|pin_name~input                                                                    ; o                ;
+; |ula|pin_name                                                                          ; |ula|pin_name                                                                          ; padout           ;
+; |ula|g[6]~input                                                                        ; |ula|g[6]~input                                                                        ; o                ;
+; |ula|g[6]                                                                              ; |ula|g[6]                                                                              ; padout           ;
+; |ula|g[5]~input                                                                        ; |ula|g[5]~input                                                                        ; o                ;
+; |ula|g[5]                                                                              ; |ula|g[5]                                                                              ; padout           ;
+; |ula|g[4]~input                                                                        ; |ula|g[4]~input                                                                        ; o                ;
+; |ula|g[4]                                                                              ; |ula|g[4]                                                                              ; padout           ;
+; |ula|g[3]~input                                                                        ; |ula|g[3]~input                                                                        ; o                ;
+; |ula|g[3]                                                                              ; |ula|g[3]                                                                              ; padout           ;
+; |ula|g[2]~input                                                                        ; |ula|g[2]~input                                                                        ; o                ;
+; |ula|g[2]                                                                              ; |ula|g[2]                                                                              ; padout           ;
+; |ula|g[1]~input                                                                        ; |ula|g[1]~input                                                                        ; o                ;
+; |ula|g[1]                                                                              ; |ula|g[1]                                                                              ; padout           ;
+; |ula|g[0]~input                                                                        ; |ula|g[0]~input                                                                        ; o                ;
+; |ula|g[0]                                                                              ; |ula|g[0]                                                                              ; padout           ;
+; |ula|pin_name~inputclkctrl                                                             ; |ula|pin_name~inputclkctrl                                                             ; outclk           ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Apr 05 22:43:19 2025
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off d -c d
+Info: Using vector source file "C:/altera/13.1/d.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "S[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "S[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "S[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "S[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "S[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "S[2]" in design.
+Warning: Wrong node type for node "S[0]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "S[1]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Can't find signal in vector source file for input pin "|ula|g[7]"
+Warning: Can't find signal in vector source file for input pin "|ula|pin_name"
+Warning: Can't find signal in vector source file for input pin "|ula|g[6]"
+Warning: Can't find signal in vector source file for input pin "|ula|g[5]"
+Warning: Can't find signal in vector source file for input pin "|ula|g[4]"
+Warning: Can't find signal in vector source file for input pin "|ula|g[3]"
+Warning: Can't find signal in vector source file for input pin "|ula|g[2]"
+Warning: Can't find signal in vector source file for input pin "|ula|g[1]"
+Warning: Can't find signal in vector source file for input pin "|ula|g[0]"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       7.89 %
+Info: Number of transitions in simulation is 33
+Info: Quartus II Simulator was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 165 megabytes
+    Info: Processing ended: Sat Apr 05 22:43:20 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
